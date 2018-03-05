@@ -5,11 +5,13 @@ jobs:
       - image: circleci/node:4.8.2
     steps:
       - checkout
-      - run: |
-        FOO=5
-        echo $FOO
-      - run: |
-      echo $FOO
+      - run:
+          command: |
+            FOO=5
+            echo $FOO
+      - run:
+          command: |
+            echo $FOO
 workflows:
   version: 2
   build_and_test:
