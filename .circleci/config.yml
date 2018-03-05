@@ -11,6 +11,7 @@ jobs:
             echo $FOO
       - run:
           command: |
+            which stack
             echo $FOO
 workflows:
   version: 2
